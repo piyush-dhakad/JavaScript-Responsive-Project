@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tree Leaf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <button id="sideNavToggleButton">
+            <span class="material-icons">menu</span></button>
+        <img class="brand-icon" src="./assets/images/leaf.png" alt="brand_icon">
+        <div class="brand-name">Tree Leaf</div>
+        <ul class="nav-tabs">
+            <li class="nav-tab active">Home</li>
+            <li class="nav-tab">Services</li>
+            <li class="nav-tab">Products</li>
+            <li class="nav-tab">About</li>
+        </ul>
+        <span class="spacer"></span>
+        <div class="activity-icons">
+            <span class="material-icons">notifications</span>
+            <span class="material-icons">shopping_cart</span>
+            <span class="material-icons">support_agent</span>
+        </div>
+        <button id="signupButton" onclick="openSignupDialog()">Signup</button>
+    </div>
+    <div id="sideNavBar" class="side-nav-bar">
+        <ul class="side-nav-tabs">
+            <li class="side-nav-tab active">
+                <span class="material-icons">home</span>
+                Home
+            </li>
+            <li class="side-nav-tab">
+                <span class="material-icons">home_repair_service</span>
+                Services
+            </li>
+            <li class="side-nav-tab">
+                <span class="material-icons">category</span>
+                Products
+            </li>
+            <li class="side-nav-tab">
+                <span class="material-icons">info</span>
+                About
+            </li>
+            <span class="spacer"></span>
+            <li class="side-nav-tab">
+                <span class="material-icons">notifications</span>
+                Notifications
+            </li>
+            <li class="side-nav-tab">
+                <span class="material-icons">shopping_cart</span>
+                Shopping
+                Cart
+            </li>
+            <li class="side-nav-tab">
+                <span class="material-icons">support_agent</span>
+                Support
+            </li>
+        </ul>
+    </div>
+    <div class="container" id="mainContainer">
+        <div class="row forest">
+            <div class="image" style="background-image: url('./assets/images/amazon-rainforest.jpg')"></div>
+            <div class="detail">
+                <h2 class="title-2">Amazon Rainforest, South America</h2>
+                <div class="row">
+                    <div class="subtitle">Area: 5.5 million km²</div>
+                    <div class="date">Nov 7, 2021</div>
+                </div>
+                <div class="description">
+                    <p>Considered as one of the largest forests in the world, the Amazon Rainforest, popularly known as
+                        Amazon Jungle or Amazonia is a tropical rainforest located in South America. The forest shares
+                        its location with 9 nations including Bolivia, Brazil, Colombia, Ecuador, French Guiana
+                        (France), Guyana, Peru, Suriname, and Venezuela.</p>
+                    <p>Being the largest forest in the world, over people of 350 ethnicities reside within the Amazon
+                        Rainforest. It’s the home to 40,000 plant species, 1,300 bird species, 2,200 species of fishes,
+                        427 types of mammals, 430 amphibian species, 380 reptile species and is also home to over 2.5
+                        million different types of insects. Amazon Rainforest is also the source of 20% of Earth’s
+                        oxygen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row forest">
+            <div class="image" style="background-image: url('./assets/images/tongass.jpg')"></div>
+            <div class="detail">
+                <h2 class="title-2">Tongass, North America</h2>
+                <div class="row">
+                    <div class="subtitle">Area: 68,000 km²</div>
+                    <div class="date">Dec 10, 2021</div>
+                </div>
+                <div class="description">
+                    <p>The other largest forest in the world is Tongass National Forest which is also a key mention in
+                        our list. The largest national forest of the USA, it’s a temperate rainforest and is home to a
+                        large number of endangered species of both flora and fauna.</p>
+                    <p>The Tongass National Forest offers both shelter and livelihood to over 75,000 people and consists
+                        of islands, mountains, glaciers, etc. It is also home to the largest number of bald eagles and
+                        various species of brown bears, moose, porpoises, humpback whales, mountain goats, killer
+                        whales, sea otters, hair seals, black bears, wolves. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="backdrop" class="backdrop"></div>
+    <div id="signupDialog" class="dialog-container">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h2 class="title-2">Login / Signup <p id="date"></p>
+                </h2>
+            </div>
+            <div class="dialog-content">
+                <form id="loginForm" action="/thankyou/thankyou.html">
+                    <table>
+                        <tr>
+                            <td> <label for="name">Name: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" minlength="3" maxlength="24"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name">Number: </label>
+                            </td>
+                            <td> <input type="number" name="number" minlength="3" maxlength="24"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name">Dob: </label>
+                            </td>
+                            <td> <input type="date" name="dob" minlength="3" maxlength="24"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gender"> Gender: </label>
+                            </td>
+                            <td> <label for="Male">Male</label>
+                                <input type="radio" name="gender" value="Male" checked>
+                                <label for="Female">Female</label>
+                                <input type="radio" name="gender" value="Female"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="name">Other: </label>
+                            </td>
+                            <td> <textarea name="other" ro="3" col="24"></textarea><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="submit" value="Signup">
+                            </td>
+                            <td> <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="dialog-footer">
+                <button onclick="closeSignupDialog()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

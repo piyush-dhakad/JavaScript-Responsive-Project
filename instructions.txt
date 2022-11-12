@@ -1,0 +1,35 @@
+Create an HTML page by following these instructions
+
+1) Create a top navigation bar
+- Fixed at top
+- Button (side navigation menu toggle button) to open Side navigation bar on the left
+- 'side navigation menu toggle button' will be visible if screen size is below 601px 
+- Brand icon, next to the 'side navigation menu toggle button'
+- Some Navigation tabs, next to the brand icon
+- Some activity icons on the right
+- Signup/Signin button next to the activity icons
+
+2) Create a Side navigation menu (Hamburger menu) for screen size below 601px
+- Visible or invisible by clicking 'side navigation menu toggle button'
+- brand icon on top
+- Some Navigation tabs below brand icon
+- Some activity icons at the bottom of the navigation menu
+
+3) Content on the page
+- Image with 50% width on the left
+- Some description about image; with Title, subtitle, date and text
+- Alternatively Image on the right and description on the left
+- Below 601px, the description will be at the bottom of the image
+
+4) Create a dialog
+- Having title and some content (text & image)
+- with proper backdrop
+- in center of the viewport
+- will appear on click of Signup/Login button
+
+5) Display progress ring
+- with proper backdrop
+- in center of the viewport
+- will appear on click of any activity icon on the page
+
+Note: Everything should be proper in position, padding, margin, alignment etc.
